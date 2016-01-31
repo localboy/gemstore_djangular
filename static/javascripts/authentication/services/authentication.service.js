@@ -43,7 +43,7 @@
             }).then(loginSuccessFn, loginErrorFn);
 
             function loginSuccessFn(data, status, headers, config) {
-                authentication.setAuthenticatedAccount(data.data);
+                Authentication.setAuthenticatedAccount(data.data);
 
                 window.location = '/';
             }

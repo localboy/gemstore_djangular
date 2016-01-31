@@ -22,7 +22,7 @@
             templateUrl: '/static/templates/authentication/login.html'
         }).when('/',{
             controller: 'ProductController',
-            controllerAs: 'vm',
+            controllerAs: 'prod',
             templateUrl: '/static/templates/products/products.html'
         }).otherwise('/');
     }

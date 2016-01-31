@@ -13,7 +13,17 @@
         vm.test = 'This is test';
 
         function products() {
-            Products.getProducts();
+            return Products.getProducts();
         }
     }
+
+    /*.controller('ProductController',['$scope','$http',function($scope,$http){
+        $http.get('/products/api/').success(function(data){
+            $scope.products=data
+            $scope.test = 'This is test';
+        })
+        .error(function(){
+            alert('error')
+        });
+    }]);*/
 })();

@@ -15,7 +15,8 @@
         return products
 
         function getProducts() {
-            $http.get('http://127.0.0.1:8000/products/api/').success(function(data){
+            var hello = 'Hello there!'
+            $http.get('/products/api/?format=json').success(function(data){
                 products=data
             }).error(function(){
                 alert('error')
