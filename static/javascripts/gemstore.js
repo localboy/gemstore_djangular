@@ -3,9 +3,14 @@
 
     angular
         .module('gemstore', [
+            'gemstore.config',
             'gemstore.routes',
             'gemstore.authentication',
-            'gemstore.products'
+            'gemstore.layout',
+            'gemstore.posts',
+            'gemstore.products',
+            'gemstore.utils'
+
         ]);
 
     angular

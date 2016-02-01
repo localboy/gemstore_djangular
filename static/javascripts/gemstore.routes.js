@@ -21,9 +21,9 @@
             controllerAs: 'vm',
             templateUrl: '/static/templates/authentication/login.html'
         }).when('/',{
-            controller: 'ProductController',
-            controllerAs: 'prod',
-            templateUrl: '/static/templates/products/products.html'
+            controller: 'IndexController',
+            controllerAs: 'vm',
+            templateUrl: '/static/templates/layout/index.html'
         }).otherwise('/');
     }
 })();
