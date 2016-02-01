@@ -23,5 +23,9 @@
         function error(content, options) {
             _snackbar(content, options);
         }
+
+        function show(content, options) {
+            _snackbar(content, options);
+        }
     }
 })($, _);

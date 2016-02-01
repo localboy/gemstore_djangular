@@ -3,7 +3,7 @@
 
     angular
         .module('gemstore.layout.controllers')
-        .controllers('IndexController', IndexController);
+        .controller('IndexController', IndexController);
 
     IndexController.$inject = ['$scope', 'Authentication', 'Posts', 'Snackbar'];
 

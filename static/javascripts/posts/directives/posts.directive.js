@@ -7,9 +7,9 @@
 
     function posts() {
         var directive = {
-            controller: 'PostController',
+            controller: 'PostsController',
             controllerAs: 'vm',
-            ristrict: 'E',
+            restrict: 'E',
             scope: {
                 posts: '='
             },
