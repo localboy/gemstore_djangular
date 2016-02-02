@@ -15,9 +15,9 @@
         return products
 
         function getProducts() {
-            var hello = 'Hello there!'
+//            var hello = 'Hello there!'
             $http.get('/products/api/?format=json').success(function(data){
-                products=data
+                products=data.data
             }).error(function(){
                 alert('error')
             });

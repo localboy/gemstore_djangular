@@ -19,11 +19,11 @@
             Posts.all().then(postsSuccessFn, postsErrorFn);
 
             $scope.$on('post.created', function (event, post) {
-                vm.post.unshift(post);
+                vm.posts.unshift(post);
             });
 
             $scope.$on('post.created.error', function () {
-                vm.post.shift();
+                vm.posts.shift();
             });
 
             function postsSuccessFn(data, status, headers, config) {

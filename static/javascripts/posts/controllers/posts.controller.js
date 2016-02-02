@@ -15,7 +15,7 @@
         active();
 
         function active() {
-            $scope.$watchCollection(function () { return $scope.posts; }, render)
+            $scope.$watchCollection(function () { return $scope.posts; }, render);
             $scope.$watch(function () { return $(window).width(); }, render);
         }
 
@@ -36,7 +36,7 @@
         function approximateShortestColumn() {
             var scores = vm.columns.map(columnMapFn);
 
-            return scores.indexOf(math.min.apply(this, scores));
+            return scores.indexOf(Math.min.apply(this, scores));
 
 
             function columnMapFn(column) {
@@ -55,6 +55,10 @@
         function render(current, original) {
             if (current !== original) {
                 vm.columns = [];
+
+                for (var i = 0; i < calculateNumberOfColumns(); ++i) {
+                    vm.columns.push([]);
+                }
 
                 for (var i = 0; i < current.length; ++i) {
                     var column = approximateShortestColumn();

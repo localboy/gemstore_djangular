@@ -9,7 +9,8 @@
             'gemstore.layout',
             'gemstore.posts',
             'gemstore.products',
-            'gemstore.utils'
+            'gemstore.utils',
+            'gemstore.profiles'
 
         ]);
 

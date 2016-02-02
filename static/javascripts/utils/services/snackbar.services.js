@@ -21,7 +21,7 @@
         }
 
         function error(content, options) {
-            _snackbar(content, options);
+            _snackbar('Error: ' + content, options);
         }
 
         function show(content, options) {
